@@ -1,0 +1,17 @@
+type Car {
+    id: ID!
+    name: String
+    milesPerGallon: Float
+    cylinders: Int
+    displacement: Int
+    horsepower: Int
+    weightInLbs: Int
+    acceleration: Float
+    year: String
+    origin: String
+}
+
+type Query {
+    findAll: [Car]
+    findOne(id: ID!): Car
+}
