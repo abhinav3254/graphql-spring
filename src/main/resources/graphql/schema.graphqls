@@ -15,3 +15,20 @@ type Query {
     findAll: [Car]
     findOne(id: ID!): Car
 }
+
+
+# here :Car is the return type from the query
+type Mutation {
+    addCar(input: CarInput!): Car
+}
+
+input CarInput {
+    name: String!
+    milesPerGallon: Float
+    cylinders: Int
+    displacement: Int
+    horsepower: Int
+    weightInLbs: Int
+    acceleration: Float
+    origin: String
+}
