@@ -62,4 +62,12 @@ public class CarsService {
         }
     }
 
+    public Cars deleteCar(Long id) {
+        Optional<Cars> carsOptional = this.carsRepository.findById(id);
+        if (carsOptional.isEmpty()) return null;
+        else {
+            this.carsRepository.delete(carsOptional.get());
+            return carsOptional.get();
+        }
+    }
 }

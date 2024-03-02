@@ -21,6 +21,7 @@ type Query {
 type Mutation {
     addCar(input: CarInput!): Car
     updateCar(id: ID!, input: CarInput!): Car
+    deleteCar(id: ID!): Car
 }
 
 input CarInput {

@@ -46,4 +46,9 @@ public class CarController {
         return carsService.updateCar(id,carInput);
     }
 
+    @MutationMapping(name = "deleteCar")
+    public Cars deleteCar(@Argument Long id) {
+        return this.carsService.deleteCar(id);
+    }
+
 }
