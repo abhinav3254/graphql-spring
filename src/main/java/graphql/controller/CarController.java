@@ -5,11 +5,13 @@ import graphql.service.CarsService;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-
+/**
+ * Note here don't make it RestController
+ * because we are using graphql and note that it is not rest
+ */
 @Controller
 public class CarController {
 
