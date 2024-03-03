@@ -3,7 +3,6 @@ package graphql.controller;
 import graphql.model.CarInput;
 import graphql.model.Cars;
 import graphql.service.CarsService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
